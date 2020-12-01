@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cantos_redonodos">
+    
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantidade"
+        android:layout_marginTop="48dp"
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/txtTitulo"
+        android:padding="16dp"
+        android:layout_marginTop="32dp">
+        
+        <ImageButton
+            android:id="@+id/soma"
+            android:src="@drawable/ic_add_black_24dp"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/botao_redondo_loja"
+
+            />
+
+        <TextView
+            android:id="@+id/quantidade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            android:text="0"/>
+
+        <ImageButton
+            android:id="@+id/subtrai"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:background="@drawable/botao_redondo_loja"
+            android:src="@drawable/ic_baseline_remove_24"
+            android:layout_marginRight="16dp"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnSIm"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="SIM"
+        android:layout_below="@+id/linearLayoutCompra"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/botao_degrade"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_marginTop="32dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/btnSIm"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/botao_degrade"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
